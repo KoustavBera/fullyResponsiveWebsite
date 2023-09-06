@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    /*aligns the element in vertical direction  */
+}
+
+.logo {
+    margin: 24px 45px;
+
+}
+
+.logo img {
+    margin: -28px -10px;
+    padding: 5px 13px;
+    height: 65px;
+    width: 65px;
+}
+
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#navbar ul li {
+    font-family: 'Roboto';
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+/* #navbar ul li a:hover{
+    text-decoration: none;
+} */
+/* 
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 0, 0,0.8); */
+   
+#navbar ul li a::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: aliceblue;
+   bottom: 0;
+   left: 0;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: 0.3s ease;
+}
+#navbar ul li a:hover::after{
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+#navbar ul li a:active{
+    transform: scaleX(0.95);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+/* why we use ::before because if want to change the opacity then if we not use :: before the it will also reduce opacity of text  */
+#home::before {
+    /* rule 1  */
+    content: "";
+    /* rule 2  */
+    position: absolute;
+    /* rule 3  */
+    height: 83%;
+    width: 100%;
+    background: url('../wallpaperflare.com_wallpaper\ \(2\).jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+#home h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Poppins';
+    color: aliceblue;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.h-primary {
+    font-family: 'Borel';
+    font-size: 3.2rem;
+    padding: 12px;
+}
+
+.service-container h1 {
+    margin-bottom: -24px;
+    margin-top: 142px;
+    color: rgb(255, 255, 255);
+    font-family: 'Borel';
+    font-size: 2.8rem;
+    padding: 12px;
+    
+}
+.box{
+    transition: all 0.2s;
+}
+.box:active{
+    transform: scaleX(0.95);
+}
+
+
+.h-secondary {
+    margin: 30px 2px;
+
+    font-family: 'Borel';
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+#services p {
+    font-family: 'Poppins';
+    color: aliceblue;
+}
+
+#services h2 {
+    color: white;
+}
+
+.btn {
+    display: block;
+    padding: 6px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.1);
+    color: rgb(254, 254, 254);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.btn:active{
+transform: scale(0.95);
+}
+
+.center {
+    text-align: center;
+}
+
+.service-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: url(../1324858.jpg);
+    background-repeat: no-repeat;
+    margin-top: -52px;
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(0.5)
+}
+
+#services {
+    margin: 10px 34px;
+    display: flex;
+}
+
+#services .box {
+    margin: 6px;
+    border-radius: 28px;
+    background-color: rgb(1, 1, 1, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 10px;
+
+}
+
+#services .box img {
+    display: block;
+    height: 150px;
+    margin: auto;
+    width: 150px;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients .logo1 img{
+    height: 86px;
+    width: 71px;
+}
+#clients .logo2 img{
+    height: 136px;
+    width: 197px;
+}
+#clients .logo3 img{
+    height: 100px;
+    width: 100px;
+}
+#clients .logo4 img{
+    height: 127px;
+    width: 139px;
+}
+.client-item{
+    margin-top: -69px;
+    padding: 19px 63px;
+    margin-bottom: 33px;
+}
+#client-section{
+  
+    background-color: rgb(20, 20, 20);  
+    margin-top: -17px; 
+}
+#client-section h1{
+   color: rgb(255, 255, 255);
+ 
+}
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+
+    
+}
+.h-last{
+    padding-top: 20px;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: lighter;
+}
+footer{
+    background: black;
+    color: aliceblue;
+    padding: 23px 23px;
+}
+#contact label{
+color: aliceblue;
+font-size: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-box input,textarea{
+    width: 100%;
+    padding: 0.5rem;border-radius: 12px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding-bottom: 34px;
+    padding-top: 20px;
+
+}
+.formgroup{
+    padding: 5px;
+}
